@@ -10,8 +10,6 @@
   --shadow: 0 18px 45px rgba(47, 47, 47, 0.08);
 }
 
-/* Reset */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -81,7 +79,7 @@ a {
   cursor: pointer;
 }
 
-/* Hero */
+/* Hero with portrait */
 
 .hero {
   position: relative;
@@ -184,7 +182,7 @@ a {
   transform: translateY(-2px);
 }
 
-/* Portrait */
+/* Portrait design */
 
 .portrait-wrap {
   position: relative;
@@ -213,7 +211,6 @@ a {
     radial-gradient(circle at 70% 20%, rgba(184, 155, 114, 0.25), transparent 36%),
     radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.75), transparent 34%);
   z-index: 0;
-  pointer-events: none;
 }
 
 .portrait-frame::after {
@@ -222,13 +219,13 @@ a {
   inset: 18px;
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 38% 62% 50% 50% / 44% 40% 60% 56%;
-  z-index: 4;
+  z-index: 2;
   pointer-events: none;
 }
 
 .portrait-frame img {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -262,7 +259,32 @@ a {
   z-index: -1;
 }
 
-/* Sections */
+.portrait-note {
+  position: absolute;
+  left: -22px;
+  bottom: -24px;
+  max-width: 290px;
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(227, 217, 204, 0.9);
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(47, 47, 47, 0.10);
+  backdrop-filter: blur(12px);
+}
+
+.portrait-note span {
+  display: block;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.portrait-note span:first-child {
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* General sections */
 
 .section {
   max-width: 1180px;
@@ -296,8 +318,6 @@ a {
   padding-right: calc((100% - 1180px) / 2 + 28px);
 }
 
-/* Cards */
-
 .cards,
 .project-grid,
 .workflow {
@@ -306,7 +326,7 @@ a {
 }
 
 .cards {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card,
@@ -335,7 +355,7 @@ a {
 /* Projects */
 
 .project-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .project-card {
@@ -367,27 +387,22 @@ a {
   border-bottom: 1px solid var(--accent);
 }
 
-/* Workflow / P.A.C.E. */
+/* Workflow */
 
 .workflow {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.workflow-step {
-  min-height: 260px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .workflow-step span {
   display: inline-flex;
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: var(--bg-soft);
   color: var(--accent-dark);
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 1.05rem;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -442,23 +457,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Tablet / Small Desktop */
-
-@media (max-width: 1100px) {
-  .cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .workflow {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-/* Mobile / Tablet */
+/* Responsive */
 
 @media (max-width: 900px) {
   .menu-toggle {
@@ -490,35 +489,30 @@ footer {
 
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .hero-content {
-    max-width: 100%;
+    gap: 44px;
   }
 
   .portrait-wrap {
-    width: min(260px, 76vw);
+    width: min(320px, 82vw);
     order: -1;
-    margin: 0 auto;
+  }
+
+  .portrait-note {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 16px auto 0;
   }
 
   .hero h1 {
     font-size: clamp(2.7rem, 14vw, 4.6rem);
   }
 
-  .hero-subtitle {
-    font-size: 1.08rem;
-  }
-
   .two-column,
   .cards,
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .project-grid,
   .workflow {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .section {
@@ -528,48 +522,5 @@ footer {
   .muted {
     padding-left: 22px;
     padding-right: 22px;
-  }
-}
-
-/* Phone */
-
-@media (max-width: 560px) {
-  .navbar {
-    padding: 16px 20px;
-  }
-
-  .hero {
-    padding: 96px 20px 64px;
-  }
-
-  .portrait-wrap {
-    width: min(240px, 72vw);
-  }
-
-  .workflow {
-    grid-template-columns: 1fr;
-  }
-
-  .workflow-step {
-    min-height: auto;
-  }
-
-  .project-card {
-    min-height: auto;
-  }
-
-  .section h2 {
-    font-size: clamp(2rem, 10vw, 3rem);
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-links a {
-    width: 100%;
-    max-width: 260px;
-    text-align: center;
   }
 }
