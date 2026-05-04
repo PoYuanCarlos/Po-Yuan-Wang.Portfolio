@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Transportation Strategy & Analytics</title>
+  <title>Po-Yuan Wang | Transportation Strategy & Analytics</title>
+
+  <meta 
+    name="description" 
+    content="Portfolio of Po-Yuan Wang: transportation analytics, project management, BigQuery SQL, Tableau dashboards, and AI-assisted decision-support workflows."
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,7 +19,9 @@
     <nav class="navbar">
       <div class="logo">Po-Yuan Wang</div>
 
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+        ☰
+      </button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
@@ -27,40 +34,42 @@
   </header>
 
   <main>
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <p class="eyebrow">Transportation · Data Analytics · AI-Assisted Workflow</p>
 
-      <h1>Transportation Strategy & Analytics</h1>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Transportation · Data Analytics · AI-Assisted Workflow</p>
 
-      <p class="hero-subtitle">
-        Bridging transportation engineering, project management, data analytics,
-        and AI-assisted decision workflows.
-      </p>
+          <h1>Transportation Strategy & Analytics</h1>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#workflow" class="btn secondary">See Workflow</a>
+          <p class="hero-subtitle">
+            Bridging transportation engineering, project management, data analytics,
+            and AI-assisted decision workflows.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#workflow" class="btn secondary">See Workflow</a>
+          </div>
+        </div>
+
+        <div class="portrait-wrap">
+          <div class="portrait-frame">
+            <img src="assets/portrait.jpeg" alt="Portrait of Po-Yuan Wang" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="portrait-wrap">
-      <div class="portrait-frame">
-        <img src="assets/portrait.jpeg" alt="Portrait of Po-Yuan Wang" />
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    <!-- About -->
     <section id="about" class="section two-column">
       <div>
         <p class="section-label">About</p>
         <h2>Transportation Ph.D. researcher with a decision-oriented analytics focus.</h2>
       </div>
 
-      <div>
+      <div class="section-body">
         <p>
           I focus on transportation systems, non-emergency medical transportation,
           airport parking, accessibility, and decision-support analytics. My portfolio
@@ -76,12 +85,14 @@
       </div>
     </section>
 
+    <!-- Expertise -->
     <section id="expertise" class="section muted">
       <p class="section-label">Core Expertise</p>
       <h2>What this portfolio demonstrates</h2>
 
       <div class="cards">
         <article class="card">
+          <span class="card-number">01</span>
           <h3>Transportation Analytics</h3>
           <p>
             Translating transportation problems into measurable indicators,
@@ -90,122 +101,204 @@
         </article>
 
         <article class="card">
+          <span class="card-number">02</span>
           <h3>BigQuery / SQL</h3>
           <p>
             Building reproducible data workflows for querying, joining,
-            cleaning, and preparing structured transportation datasets.
+            cleaning, validating, and preparing structured transportation datasets.
           </p>
         </article>
 
         <article class="card">
+          <span class="card-number">03</span>
           <h3>Dashboard Design</h3>
           <p>
             Creating Tableau dashboards that communicate trends, equity gaps,
-            demand patterns, and operational performance.
+            demand patterns, and operational performance to non-technical audiences.
           </p>
         </article>
 
         <article class="card">
+          <span class="card-number">04</span>
           <h3>AI-Assisted Workflow</h3>
           <p>
             Using AI to support data cleaning, documentation, code checking,
-            workflow automation, and analytical interpretation.
+            workflow design, and analytical interpretation while keeping human review central.
           </p>
         </article>
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section">
       <p class="section-label">Featured Projects</p>
       <h2>Selected portfolio projects</h2>
 
+      <p class="section-intro">
+        Each project is designed to demonstrate problem framing, data preparation,
+        analytical reasoning, dashboard communication, and decision-support delivery.
+      </p>
+
       <div class="project-grid">
+
         <article class="project-card">
-          <span class="project-tag">NEMT · Equity · Dashboard</span>
-          <h3>NEMT Access & Equity Dashboard (WIP)</h3>
+          <span class="project-tag">Airport Parking · Scenario Analysis · Tableau</span>
+
+          <h3>Airport Parking & Space Reuse</h3>
+
+          <p>
+            A scenario-based transportation analytics project evaluating how shared
+            autonomous mobility may reallocate airport parking demand, increase curbside
+            and staging pressure, and create opportunities for adaptive parking-space reuse.
+          </p>
+
+          <div class="project-links">
+            <a href="https://poyuancarlos.github.io/airport-parking-space-reuse/" target="_blank" rel="noopener noreferrer">
+              Project Page
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              GitHub Repo
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">NEMT · Equity · Healthcare Access</span>
+
+          <h3>NEMT Access & Equity Dashboard <span class="wip">(WIP)</span></h3>
+
           <p>
             A dashboard concept for evaluating non-emergency medical transportation
-            access, service reliability, patient risk, and spatial equity.
+            access, service reliability, patient risk, appointment vulnerability,
+            and spatial equity in healthcare-related mobility.
           </p>
 
           <div class="project-links">
-            <a href="#">Tableau Link</a>
-            <a href="#">GitHub Repo</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Tableau Link
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              GitHub Repo
+            </a>
           </div>
         </article>
 
         <article class="project-card">
-          <span class="project-tag">Airport Parking · Simulation</span>
-          <h3>Airport Parking & Space Reuse</h3>
-          <p>
-            A scenario-based transportation analytics project evaluating how shared autonomous mobility may reallocate airport parking demand,
-            increase curbside and staging pressure, and create opportunities for adaptive parking-space reuse.
-          </p>
+          <span class="project-tag">Transit · Accessibility · Service Coverage</span>
 
-          <div class="project-links">
-            <a href="#">Dashboard</a>
-            <a href="https://poyuancarlos.github.io/airport-parking-space-reuse/">GitHub Repo</a>
-          </div>
-        </article>
+          <h3>Transit Service Accessibility Analytics <span class="wip">(Planned)</span></h3>
 
-        <article class="project-card">
-          <span class="project-tag">Transit · Accessibility</span>
-          <h3>Transit Service Accessibility Analytics</h3>
           <p>
             A data analytics project measuring accessibility, service coverage,
-            and potential mismatch between transit supply and user needs.
+            and potential mismatch between transportation supply and user needs.
           </p>
 
           <div class="project-links">
-            <a href="#">Case Study</a>
-            <a href="#">GitHub Repo</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Case Study
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              GitHub Repo
+            </a>
           </div>
         </article>
+
       </div>
     </section>
 
+    <!-- Workflow -->
     <section id="workflow" class="section muted">
       <p class="section-label">System Architecture</p>
-      <h2>P.A.C.E. Framework for AI-assisted transportation analytics</h2>
 
-    <div class="workflow-step">
-      <div class="workflow-heading">
-        <span>P</span>
-          <h3>Problem Framing</h3>
+      <h2>Customized PACE Workflow for Transportation Decision Support</h2>
+
+      <p class="section-intro">
+        This portfolio uses a customized PACE workflow adapted from the
+        Plan–Analyze–Construct–Execute structure commonly used in data analytics training.
+        The framework is redesigned for transportation analytics, PMP-style project delivery,
+        and AI-assisted data workflows.
+      </p>
+
+      <div class="workflow-grid">
+
+        <article class="workflow-step">
+          <div class="workflow-heading">
+            <span>P</span>
+            <h3>Problem Framing</h3>
+          </div>
+
+          <p>
+            Define the airport access problem, scope boundary, stakeholder needs,
+            KPI structure, and decision questions.
+          </p>
+
+          <ul>
+            <li>Problem statement</li>
+            <li>Stakeholder map</li>
+            <li>KPI definition</li>
+          </ul>
+        </article>
+
+        <article class="workflow-step">
+          <div class="workflow-heading">
+            <span>A</span>
+            <h3>AI-Assisted Data Processing</h3>
+          </div>
+
+          <p>
+            Use BigQuery SQL and human-reviewed AI support for cleaning, joining,
+            documentation, and validation.
+          </p>
+
+          <ul>
+            <li>Data dictionary</li>
+            <li>Cleaning rules</li>
+            <li>Validation checks</li>
+          </ul>
+        </article>
+
+        <article class="workflow-step">
+          <div class="workflow-heading">
+            <span>C</span>
+            <h3>Computational Analysis</h3>
+          </div>
+
+          <p>
+            Conduct EDA, scenario modeling, sensitivity checks, and Tableau-ready aggregation.
+          </p>
+
+          <ul>
+            <li>Scenario tables</li>
+            <li>EDA summaries</li>
+            <li>Dashboard logic</li>
+          </ul>
+        </article>
+
+        <article class="workflow-step">
+          <div class="workflow-heading">
+            <span>E</span>
+            <h3>Evidence-Based Decision Support</h3>
+          </div>
+
+          <p>
+            Translate findings into decisions, recommendations, limitations,
+            risk notes, and next-step actions.
+          </p>
+
+          <ul>
+            <li>Decision matrix</li>
+            <li>Risk notes</li>
+            <li>Actionable outputs</li>
+          </ul>
+        </article>
+
       </div>
-  
-      <p>Define transportation questions, stakeholders, decision context, and performance indicators.</p>
-    </div>
+    </section>
 
-    <div class="workflow-step">
-      <div class="workflow-heading">
-        <span>A</span>
-           <h3>AI-Assisted Data Processing</h3>
-      </div>
-      
-      <p>Use SQL, Excel, Python, and AI support to clean, join, validate, and reshape transportation datasets.</p>
-    </div>
-
-    <div class="workflow-step">
-      <div class="workflow-heading">
-        <span>C</span>
-          <h3>Computational Analysis</h3>
-      </div> 
-      
-        <p>Apply analytical logic, simulation, visualization, or optimization to explore operational scenarios.</p>
-    </div>
-
-    <div class="workflow-step">
-      <div class="workflow-heading">
-        <span>E</span>
-          <h3>Evidence-Based Decision Support</h3>
-     </div> 
-      
-        <p>Translate analytical outputs into dashboards, management insights, and policy-relevant recommendations.</p>
-    </div>
-      
+    <!-- Credentials -->
     <section class="section credentials">
       <p class="section-label">Tools & Credentials</p>
+
       <h2>Technical and professional toolkit</h2>
 
       <div class="tags">
@@ -214,6 +307,9 @@
         <span>Tableau</span>
         <span>Excel</span>
         <span>Python</span>
+        <span>EDA</span>
+        <span>Data Cleaning</span>
+        <span>Dashboard Design</span>
         <span>AI-Assisted Workflow</span>
         <span>Project Management</span>
         <span>PMP</span>
@@ -223,19 +319,28 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="section contact-section">
       <h2>Let’s connect</h2>
+
       <p>
         I am interested in transportation analytics, data-driven decision support,
         AI-assisted workflow design, and infrastructure-related project management.
       </p>
 
       <div class="contact-links">
-        <a href="https://www.linkedin.com/in/po-yuan-wang-6248831b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/PoYuanCarlos" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:poyuan0619@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/po-yuan-wang-6248831b1/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a href="https://github.com/PoYuanCarlos" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href="mailto:poyuan0619@gmail.com">
+          Email
+        </a>
       </div>
     </section>
+
   </main>
 
   <footer>
