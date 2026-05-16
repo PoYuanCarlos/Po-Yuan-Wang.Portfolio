@@ -649,3 +649,34 @@ footer {
     min-height: auto;
   }
 }
+
+
+/* =========================
+   Google PNG for project
+========================= */
+
+.google-project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.google-project-card::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 120px;
+  height: 120px;
+  background-image: url("assets/google-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.google-project-card > * {
+  position: relative;
+  z-index: 1;
+}
