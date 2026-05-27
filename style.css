@@ -696,9 +696,9 @@ footer {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  width: 130px;
-  height: 130px;
-  background-image: url("NCKU.png");
+  width: 120px;
+  height: 120px;
+  background-image: url("assets/NCKU.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
