@@ -680,3 +680,34 @@ footer {
   position: relative;
   z-index: 1;
 }
+
+
+/* =========================
+   ASP Barrier PNG for project
+========================= */
+
+.asp-project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.asp-project-card::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 130px;
+  height: 130px;
+  background-image: url("NCKU.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.asp-project-card > * {
+  position: relative;
+  z-index: 1;
+}
